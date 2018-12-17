@@ -1,0 +1,10 @@
+<div class="container">
+  <p>The Reviews component has a green border.</p>
+  <p>It's here because /products uses the router outlet in the root component.</p>
+  <a><button [routerLink]="['/reviews', 'details', 1]">Review 1</button></a>
+  <a><button [routerLink]="['/reviews', 'details', 2]">Review 2</button></a>
+  <a><button [routerLink]="['/reviews', 'author', 1]">Author 1</button></a>
+  <a><button [routerLink]="['/reviews', 'author', 2]">Author 2</button></a>
+  <a><button [routerLink]="['/reviews', 'all', 1]">All Reviews by Author 1</button></a>
+  <router-outlet></router-outlet>
+</div>

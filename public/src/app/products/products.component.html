@@ -1,0 +1,11 @@
+<div class="container">
+  <p>The Product component has a purple border.</p>
+  <p>It's here because /products uses the router outlet in the root component.</p>
+  <a><button [routerLink]="['/products', 'details', 1]">Product 1</button></a>
+  <a><button [routerLink]="['/products', 'details', 2]">Product 2</button></a>
+  <a><button [routerLink]="['/products', 'brand', 'nike']">Brand 1</button></a>
+  <a><button [routerLink]="['/products', 'brand', 'sony']">Brand 2</button></a>
+  <a><button [routerLink]="['/products', 'category', 'sporting goods']">Category 1</button></a>
+  <a><button [routerLink]="['/products', 'category', 'electronics']">Category 2</button></a>
+  <router-outlet></router-outlet>
+</div>
